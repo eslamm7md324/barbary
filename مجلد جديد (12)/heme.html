@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Render All Elements -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- main Template -->
+    <link rel="stylesheet" href="home.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Blaka&family=Carter+One&family=Chakra+Petch:wght@300&family=Handjet&family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Nunito:wght@200;300;400;500;600&family=Open+Sans:wght@400;700&family=Orbitron&family=Pixelify+Sans:wght@400;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300&family=Reem+Kufi+Fun:wght@400;500;600&family=Righteous&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,500&family=Rubik+Moonrocks&family=Work+Sans:ital,wght@0,200;0,400;0,800;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Barbary | Page</title>
+</head>
+<body>
+    <div class="head">
+        <div class="container">
+            <a href="" class="logo">
+                <img src="img/GREEN FOREVER.png" alt="">
+            </a>
+            <ul class="main-nav">
+                <li><a href="" class="active">home</a></li>
+                <li><a href="" id="services">services</a></li>
+                <li><a href="">about</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+            <div class="lo">
+                <i class="fa-solid fa-user "></i>
+            </div>
+                
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+                
+            </div>
+        
+            <div class="dwon">
+            
+                <li><a href="">home</a></li>
+                <li><a href="">services</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">about</a></li></div>
+            <script>
+                const toggleBtn = document.querySelector('.toggle-btn')
+                const toggleBtnIcon = document.querySelector('.toggle-btn i')
+                const dropDownMenu = document.querySelector('.dwon')
+
+                toggleBtn.onclick = () => {
+                    dropDownMenu.classList.toggle('open')
+                    const isOpen = dropDownMenu.classList.contains('open')
+
+                    toggleBtnIcon.classList = isOpen
+                        ? 'fa-solid fa-xmark'
+                        : 'fa-solid fa-bars'
+                }
+            </script>
+      
+        </div>
+            
+    </div>
+  
+    <div class="landing">
+   
+        <div class="container">
+            <div class="text">
+                <h1>Welcome <br>,We <span>GREEN FOREVER</span></h1>
+                <p>Join us on our journey towards a green future and a lifestyle that respects the environment. We're committed to
+                providing the latest news and innovations in recycling, with guidance on how to reduce waste and raise awareness of the
+                importance of preserving our planet.</p>
+            </div>
+            <div class="imag">
+                <img src="img/GREEN.png" alt="">
+            </div>
+        </div>
+        <a href="#services" class="yala-down">
+            <i class="fa-solid fa-chevron-down fa-3x"></i>
+        </a>
+            <div class="droop">
+            <form action="">
+                <h1>login</h1>
+                <div class="input-user">
+                    <input type="text" placeholder="username" required>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="input-user">
+                    <input type="password" placeholder="password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+            
+                <div class="rem">
+                    <label><input type="checkbox">Remember me</label> <a href="">forget password</a>
+                </div>
+                <div class="btn">
+                    <button type="submit">login</button>
+                </div>
+                <div class="reg">
+                    <p>dont have an account ..? <a href="">regster</a></p>
+                </div>
+            </form>
+            </div>
+        </div>
+            <script>
+                const solid = document.querySelector('.lo')
+                const icon = document.querySelector('.lo i')
+                const drop = document.querySelector('.droop')
+
+                // Setting up a click event handler
+                solid.onclick = () => {
+                    // Toggling the 'login-page' class on the 'drop' element
+                    // drop.classList.toggle('login')
+                    drop.classList.toggle('login')
+                }
+            </script>
+    </div>
+</body>
+</html>
